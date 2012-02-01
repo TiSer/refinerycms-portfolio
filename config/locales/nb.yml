@@ -20,6 +20,7 @@ nb:
       form:
         title: Tittel
         images: Bilder
+        description: Description
         add: Legg til
         add_another_image: "Legg til et bilde"
         content: Innhold

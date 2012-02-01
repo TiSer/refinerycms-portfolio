@@ -20,6 +20,7 @@ lv:
       form:
         title: Nosaukums
         images: Bildes
+        description: Description
         add: Pievienot
         add_another_image: Pievienot Bildi
         content: Saturs

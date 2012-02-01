@@ -19,6 +19,7 @@ pt-BR:
       form:
         title: Título
         images: Imagens
+        description: Description
         add: Adicionar
         add_another_image: "Adicionar outra Imagem"
         content: Conteúdo

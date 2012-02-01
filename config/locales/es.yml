@@ -20,6 +20,7 @@ es:
       form:
         title: Título
         images: Imágenes
+        description: Descripción
         add: Añadir
         add_another_image: "Añadir Otra Imagen"
         content: Contenido

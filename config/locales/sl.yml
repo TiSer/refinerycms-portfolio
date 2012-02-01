@@ -19,6 +19,7 @@ sl:
       form:
         title: Naslov
         images: Slike
+        description: Description
         add: Dodaj
         add_another_image: Dodaj sliko
         content: Vsebina

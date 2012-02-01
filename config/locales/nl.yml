@@ -20,6 +20,7 @@ nl:
       form:
         title: Titel
         images: Afbeeldingen
+        description: Description
         add: Toevoegen
         add_another_image: "Voeg afbeelding toe"
         content: Inhoud

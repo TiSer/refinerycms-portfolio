@@ -20,6 +20,7 @@ cs:
       form:
         title: Název
         images: Obrázky
+        description: Description
         add: Přidat
         add_another_image: "Přidat další obrázek"
         content: Obsah

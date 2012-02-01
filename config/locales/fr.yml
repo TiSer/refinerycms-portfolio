@@ -20,6 +20,7 @@ fr:
       form:
         title: Titre
         images: Images
+        description: Description
         add: Ajouter
         add_another_image: "Ajouter une autre image"
         content: Contenu

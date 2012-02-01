@@ -20,6 +20,7 @@ bg:
       form:
         title: Заглавие
         images: Изображения
+        description: Description
         add: Добавяне
         add_another_image: "Добавяне на друго изображение"
         content: Съдържание

@@ -19,6 +19,7 @@ en:
         confirm_delete_entry_title: "Remove this entry forever"
       form:
         title: Title
+        description: Description
         images: Images
         add: Add
         add_another_image: "Add Another Image"

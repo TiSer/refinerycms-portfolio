@@ -18,6 +18,7 @@
 
 <% content_for :body_content_right do %>
   <h2><%= @portfolio_entry.title %></h2>
+  <h3><%= @portfolio_entry.description %></h3>
   <ul id='portfolio_images'>
     <% @portfolio_entry.images.each_with_index do |image, index| %>
       <li class="<%= cycle('odd', 'even') %> <%= (index == params[:image_id].to_i) ? 'selected' : 'other' %>">

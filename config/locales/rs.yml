@@ -20,6 +20,7 @@
       form:
         title: Naslov
         images: Slike
+        description: Description
         add: Dodaj
         add_another_image: "Dodaj još slika"
         content: Sadržaj

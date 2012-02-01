@@ -44,4 +44,11 @@ describe PortfolioEntry do
       entry.content.should == entry.body
     end
   end
+
+  describe "portfolio description" do
+    it 'should create new portfolio entry with description field' do
+      portfolio_entry = PortfolioEntry.new(:title => 'Anyone', :description => 'Something')
+      portfolio_entry.should be_valid
+    end
+  end
 end

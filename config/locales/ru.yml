@@ -19,6 +19,7 @@ ru:
         confirm_delete_entry_title: "Удалить навсегда"
       form:
         title: Заголовок
+        description: Описание
         images: Изображения
         add: Добавить
         add_another_image: "Добавить"

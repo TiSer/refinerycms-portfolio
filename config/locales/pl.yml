@@ -21,6 +21,7 @@ pl:
       form:
         title: Tytuł
         images: Obrazy
+        description: Description
         add: Dodaj
         add_another_image: "Dodaj inny obraz"
         content: Zawartość
