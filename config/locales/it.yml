@@ -19,6 +19,7 @@ it:
         confirm_delete_entry_title: "Elimina questo elemento per sempre"
       form:
         title: Titolo
+        name: Name
         images: Immagini
         description: Descrizione
         link: Link

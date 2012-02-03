@@ -23,19 +23,23 @@
     <%= f.text_field :title, :class => "larger widest" %>
   </div>
   <div id='portfolio_body' class='field clearfix'>
-    <%= f.required_label t('.description') %>
+    <%= f.label t('.name') %>
+    <%= f.text_field :name, :class => "larger widest" %>
+  </div>
+  <div id='portfolio_body' class='field clearfix'>
+    <%= f.label t('.description') %>
     <%= f.text_field :description, :class => "larger widest" %>
   </div>
   <div id='portfolio_body' class='field clearfix'>
-    <%= f.required_label t('.link') %>
+    <%= f.label t('.link') %>
     <%= f.text_field :link, :class => "larger widest" %>
   </div>
   <div id='portfolio_body' class='field clearfix'>
-    <p><%= f.required_label t('.mobile') %>
+    <p><%= f.label t('.mobile') %>
     <%= f.check_box :mobile, :class => "larger widest" %></p>
-    <p><%= f.required_label t('.tablet') %>
+    <p><%= f.label t('.tablet') %>
     <%= f.check_box :tablet, :class => "larger widest" %></p>
-    <p><%= f.required_label t('.web') %>
+    <p><%= f.label t('.web') %>
     <%= f.check_box :web, :class => "larger widest" %></p>
   </div>
   <% unless RefinerySetting.find_or_set(:portfolio_has_no_index, true)%>

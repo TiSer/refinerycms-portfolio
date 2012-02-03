@@ -20,6 +20,7 @@ lt:
         confirm_delete_entry_title: "Pašalinti įrašą visam laikui"
       form:
         title: Antraštė
+        name: Name
         images: Paveikslėliai
         description: Description
         link: Link

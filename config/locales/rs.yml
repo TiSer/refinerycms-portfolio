@@ -19,6 +19,7 @@
         confirm_delete_entry_title: "Ukloni ovu galeriju zauvek"
       form:
         title: Naslov
+        name: Name
         images: Slike
         description: Description
         link: Link

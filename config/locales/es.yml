@@ -19,6 +19,7 @@ es:
         confirm_delete_entry_title: "Borrar esta entrada para siempre"
       form:
         title: Título
+        name: Name
         images: Imágenes
         description: Descripción
         link: Link

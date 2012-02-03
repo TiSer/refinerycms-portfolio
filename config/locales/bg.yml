@@ -19,6 +19,7 @@ bg:
         confirm_delete_entry_title: "Изтриване на този елемент завинаги"
       form:
         title: Заглавие
+        name: Name
         images: Изображения
         description: Description
         link: Link

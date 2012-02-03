@@ -19,6 +19,7 @@ nb:
         confirm_delete_entry_title: "Fjern elementet permanent"
       form:
         title: Tittel
+        name: Name
         images: Bilder
         description: Description
         link: Link

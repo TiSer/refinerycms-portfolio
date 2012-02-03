@@ -19,6 +19,7 @@ fr:
         confirm_delete_entry_title: "Supprimer définitivement cette entrée"
       form:
         title: Titre
+        name: Name
         images: Images
         description: Description
         link: Link

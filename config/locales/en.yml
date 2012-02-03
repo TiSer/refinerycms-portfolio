@@ -19,6 +19,7 @@ en:
         confirm_delete_entry_title: "Remove this entry forever"
       form:
         title: Title
+        name: Name
         description: Description
         link: Link
         mobile: Mobile

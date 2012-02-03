@@ -18,6 +18,7 @@ pt-BR:
         confirm_delete_entry_title: "Remover este portfólio para sempre"
       form:
         title: Título
+        name: Name
         images: Imagens
         description: Description
         link: Link

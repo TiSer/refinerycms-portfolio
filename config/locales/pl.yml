@@ -20,6 +20,7 @@ pl:
         confirm_delete_entry_title: "Usuń ten wpis na zawsze"
       form:
         title: Tytuł
+        name: Name
         images: Obrazy
         description: Description
         link: Link

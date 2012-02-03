@@ -5,7 +5,7 @@ class AddDescriptionToPortfolioEntries < ActiveRecord::Migration
   end
 
   def self.down
-    drop_column :portfolio_entries, :description
+    remove_column :portfolio_entries, :description
   end
 
 end

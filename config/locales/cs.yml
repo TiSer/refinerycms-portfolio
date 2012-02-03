@@ -19,6 +19,7 @@ cs:
         confirm_delete_entry_title: "Odstranit tuto položku"
       form:
         title: Název
+        name: Name
         images: Obrázky
         description: Description
         link: Link

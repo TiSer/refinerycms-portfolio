@@ -19,6 +19,7 @@ lv:
         confirm_delete_entry_title: Dzēst šo ierakstu
       form:
         title: Nosaukums
+        name: Name
         images: Bildes
         description: Description
         link: Link

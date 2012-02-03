@@ -18,6 +18,7 @@ sl:
         confirm_delete_entry_title: "Odstrani zapis"
       form:
         title: Naslov
+        name: Name
         images: Slike
         description: Description
         link: Link

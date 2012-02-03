@@ -19,6 +19,7 @@ nl:
         confirm_delete_entry_title: "Verwijder dit item voorgoed"
       form:
         title: Titel
+        name: Name
         images: Afbeeldingen
         description: Description
         link: Link
