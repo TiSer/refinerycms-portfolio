@@ -21,6 +21,10 @@ nl:
         title: Titel
         images: Afbeeldingen
         description: Description
+        link: Link
+        mobile: Mobile
+        tablet: Tablet
+        web: Web
         add: Toevoegen
         add_another_image: "Voeg afbeelding toe"
         content: Inhoud

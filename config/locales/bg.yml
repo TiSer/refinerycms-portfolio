@@ -21,6 +21,10 @@ bg:
         title: Заглавие
         images: Изображения
         description: Description
+        link: Link
+        mobile: Mobile
+        tablet: Tablet
+        web: Web
         add: Добавяне
         add_another_image: "Добавяне на друго изображение"
         content: Съдържание

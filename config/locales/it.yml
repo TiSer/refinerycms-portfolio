@@ -21,6 +21,10 @@ it:
         title: Titolo
         images: Immagini
         description: Descrizione
+        link: Link
+        mobile: Mobile
+        tablet: Tablet
+        web: Web
         add: Aggiungi
         add_another_image: "Aggiungi un'altra Immagine"
         content: Contenuto

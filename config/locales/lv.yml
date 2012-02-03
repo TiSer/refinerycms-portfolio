@@ -21,6 +21,10 @@ lv:
         title: Nosaukums
         images: Bildes
         description: Description
+        link: Link
+        mobile: Mobile
+        tablet: Tablet
+        web: Web
         add: Pievienot
         add_another_image: Pievienot Bildi
         content: Saturs

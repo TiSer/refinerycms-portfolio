@@ -21,6 +21,11 @@ lt:
       form:
         title: Antraštė
         images: Paveikslėliai
+        description: Description
+        link: Link
+        mobile: Mobile
+        tablet: Tablet
+        web: Web
         add: Pridėti
         add_another_image: "Pridėti kitą paveikslėlį"
         content: Turinys

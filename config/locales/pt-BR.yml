@@ -20,6 +20,10 @@ pt-BR:
         title: Título
         images: Imagens
         description: Description
+        link: Link
+        mobile: Mobile
+        tablet: Tablet
+        web: Web
         add: Adicionar
         add_another_image: "Adicionar outra Imagem"
         content: Conteúdo

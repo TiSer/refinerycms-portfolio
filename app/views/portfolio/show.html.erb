@@ -18,7 +18,13 @@
 
 <% content_for :body_content_right do %>
   <h2><%= @portfolio_entry.title %></h2>
+  <div align='right' class="project_types">
+    <span><%= "mobile" if @portfolio_entry.mobile? %></span>
+    <span><%= "tablet" if @portfolio_entry.tablet? %></span>
+    <span><%= "web" if @portfolio_entry.web? %></span>
+  </div>
   <h3><%= @portfolio_entry.description %></h3>
+  <h3><%= link_to "#{@portfolio_entry.link}", @portfolio_entry.link %></h3>
   <ul id='portfolio_images'>
     <% @portfolio_entry.images.each_with_index do |image, index| %>
       <li class="<%= cycle('odd', 'even') %> <%= (index == params[:image_id].to_i) ? 'selected' : 'other' %>">

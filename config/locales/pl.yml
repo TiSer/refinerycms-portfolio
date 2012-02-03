@@ -22,6 +22,10 @@ pl:
         title: Tytuł
         images: Obrazy
         description: Description
+        link: Link
+        mobile: Mobile
+        tablet: Tablet
+        web: Web
         add: Dodaj
         add_another_image: "Dodaj inny obraz"
         content: Zawartość

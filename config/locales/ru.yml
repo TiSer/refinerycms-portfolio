@@ -21,6 +21,10 @@ ru:
         title: Заголовок
         description: Описание
         images: Изображения
+        link: Ссылка
+        mobile: Мобильное
+        tablet: Планшетное
+        web: Веб
         add: Добавить
         add_another_image: "Добавить"
         content: Содержимое

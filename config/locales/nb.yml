@@ -21,6 +21,10 @@ nb:
         title: Tittel
         images: Bilder
         description: Description
+        link: Link
+        mobile: Mobile
+        tablet: Tablet
+        web: Web
         add: Legg til
         add_another_image: "Legg til et bilde"
         content: Innhold

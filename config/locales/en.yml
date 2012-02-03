@@ -20,6 +20,10 @@ en:
       form:
         title: Title
         description: Description
+        link: Link
+        mobile: Mobile
+        tablet: Tablet
+        web: Web
         images: Images
         add: Add
         add_another_image: "Add Another Image"

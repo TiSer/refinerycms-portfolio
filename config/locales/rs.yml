@@ -21,6 +21,10 @@
         title: Naslov
         images: Slike
         description: Description
+        link: Link
+        mobile: Mobile
+        tablet: Tablet
+        web: Web
         add: Dodaj
         add_another_image: "Dodaj još slika"
         content: Sadržaj

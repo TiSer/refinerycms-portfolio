@@ -20,6 +20,10 @@ sl:
         title: Naslov
         images: Slike
         description: Description
+        link: Link
+        mobile: Mobile
+        tablet: Tablet
+        web: Web
         add: Dodaj
         add_another_image: Dodaj sliko
         content: Vsebina

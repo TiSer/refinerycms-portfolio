@@ -21,6 +21,10 @@ cs:
         title: Název
         images: Obrázky
         description: Description
+        link: Link
+        mobile: Mobile
+        tablet: Tablet
+        web: Web
         add: Přidat
         add_another_image: "Přidat další obrázek"
         content: Obsah
