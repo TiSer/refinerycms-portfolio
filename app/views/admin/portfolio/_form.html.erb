@@ -31,8 +31,12 @@
     <%= f.text_field :description, :class => "larger widest" %>
   </div>
   <div id='portfolio_body' class='field clearfix'>
-    <%= f.label t('.link') %>
-    <%= f.text_field :link, :class => "larger widest" %>
+    <%= f.label t('.link_title') %>
+    <%= f.text_field :link_title, :class => "larger widest" %>
+  </div>
+  <div id='portfolio_body' class='field clearfix'>
+    <%= f.label t('.link_url') %>
+    <%= f.text_field :link_url, :class => "larger widest" %>
   </div>
   <div id='portfolio_body' class='field clearfix'>
     <p><%= f.label t('.mobile') %>
