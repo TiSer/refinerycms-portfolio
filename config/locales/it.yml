@@ -22,7 +22,8 @@ it:
         name: Name
         images: Immagini
         description: Descrizione
-        link: Link
+        link_title: Link title
+        link_url: Link url
         mobile: Mobile
         tablet: Tablet
         web: Web

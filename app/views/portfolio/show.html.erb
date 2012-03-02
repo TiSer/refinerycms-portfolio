@@ -28,7 +28,13 @@
       <span><%= "tablet" if @portfolio_entry.tablet? %></span>
       <span><%= "web" if @portfolio_entry.web? %></span>
     </div>
-    <h3><%= link_to "#{@portfolio_entry.link}", @portfolio_entry.link %></h3>
+
+    <% if @portfolio_entry.link_url? %>
+      <h3><%= link_to @portfolio_entry.link_url, @portfolio_entry.link_url %></h3>
+    <% elsif @portfolio_entry.link_title? %>
+      <h3><%= @portfolio_entry.link_title %></h3>
+    <% end %>
+
     <ul id='portfolio_images'>
       <% @portfolio_entry.images.each_with_index do |image, index| %>
         <li class="<%= cycle('odd', 'even') %> <%= (index == params[:image_id].to_i) ? 'selected' : 'other' %>">

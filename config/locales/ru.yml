@@ -22,7 +22,8 @@ ru:
         name: Имя
         description: Описание
         images: Изображения
-        link: Ссылка
+        link_title: Имя ссылки
+        link_url: Url ссылки
         mobile: Мобильное
         tablet: Планшетное
         web: Веб
