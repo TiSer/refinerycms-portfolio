@@ -42,6 +42,10 @@
     <p><%= f.label t('.web') %>
     <%= f.check_box :web, :class => "larger widest" %></p>
   </div>
+  <div id='portfolio_body' class='field clearfix'>
+    <%= f.label t('.no_index') %>
+    <%= f.check_box :no_index, :class => "larger widest" %>
+  </div>
   <% unless RefinerySetting.find_or_set(:portfolio_has_no_index, true)%>
     <div class='field'>
       <%= f.label :image -%>

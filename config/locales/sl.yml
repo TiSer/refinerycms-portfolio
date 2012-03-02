@@ -25,6 +25,7 @@ sl:
         mobile: Mobile
         tablet: Tablet
         web: Web
+        no_index: No index tag
         add: Dodaj
         add_another_image: Dodaj sliko
         content: Vsebina

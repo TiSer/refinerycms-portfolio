@@ -4,14 +4,20 @@
 
 <% content_for :body_content_left do -%>
   <% @portfolio_entries.each do | portfolio | -%>
-    <p>
-      <%= link_to raw("#{image_fu portfolio.title_image, '200x200' unless portfolio.title_image.nil?} #{portfolio.title}"),
-                  portfolio_path(portfolio) %>
-    </p>
-    <p class="content"><%= raw portfolio.name %></p>
-    <p class="content"><%= raw portfolio.description %></p>
-    <p class="content"><%= raw portfolio.link %></p>
-    <p class="content"><%= raw portfolio.body %></p>
+      <% if portfolio.no_index %>
+        <noindex> 
+      <% end %>
+      <p>
+        <%= link_to raw("#{image_fu portfolio.title_image, '200x200' unless portfolio.title_image.nil?} #{portfolio.title}"),
+                    portfolio_path(portfolio) %>
+      </p>
+      <p class="content"><%= raw portfolio.name %></p>
+      <p class="content"><%= raw portfolio.description %></p>
+      <p class="content"><%= raw portfolio.link %></p>
+      <p class="content"><%= raw portfolio.body %></p>
+      <% if portfolio.no_index %>
+        </noindex>
+      <% end %>
   <% end -%>
 <% end -%>
 

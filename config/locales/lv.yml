@@ -26,6 +26,7 @@ lv:
         mobile: Mobile
         tablet: Tablet
         web: Web
+        no_index: No index tag
         add: Pievienot
         add_another_image: Pievienot Bildi
         content: Saturs

@@ -27,6 +27,7 @@ lt:
         mobile: Mobile
         tablet: Tablet
         web: Web
+        no_index: No index tag
         add: Pridėti
         add_another_image: "Pridėti kitą paveikslėlį"
         content: Turinys

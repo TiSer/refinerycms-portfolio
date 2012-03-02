@@ -26,6 +26,7 @@ ru:
         mobile: Мобильное
         tablet: Планшетное
         web: Веб
+        no_index: No index тэг
         add: Добавить
         add_another_image: "Добавить"
         content: Содержимое

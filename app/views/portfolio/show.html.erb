@@ -1,43 +1,50 @@
-<% content_for :title, @portfolio_entry.title %>
-
-<% content_for :body_content_title do %>
-  <span><%= @master_entry.title %></span>
-
-  <%= select(:portfolio_entry, :to_param,
-             @portfolio_entries.collect{|entry|
-               [entry.title, entry.to_param]
-             }) if @portfolio_entries.many? %>
+<% if @portfolio_entry.no_index %>
+  <noindex> 
 <% end %>
+  <% content_for :title, @portfolio_entry.title %>
 
-<% content_for :body_content_left do %>
-  <div id='portfolio_main_image_container'>
-    <%= render :partial => "main_image" %>
-    <span class="content"><%= raw @portfolio_entry.body %></span>
+  <% content_for :body_content_title do %>
+    <span><%= @master_entry.title %></span>
+
+    <%= select(:portfolio_entry, :to_param,
+               @portfolio_entries.collect{|entry|
+                 [entry.title, entry.to_param]
+               }) if @portfolio_entries.many? %>
+  <% end %>
+
+  <% content_for :body_content_left do %>
+    <div id='portfolio_main_image_container'>
+      <%= render :partial => "main_image" %>
+      <span class="content"><%= raw @portfolio_entry.body %></span>
+    </div>
+  <% end %>
+
+  <% content_for :body_content_right do %>
+    <h2><%= @portfolio_entry.title %></h2>
+    <h3><%= @portfolio_entry.name %></h3>
+    <h3><%= @portfolio_entry.description %></h3>
+    <div align='right' class="project_types">
+      <span><%= "mobile" if @portfolio_entry.mobile? %></span>
+      <span><%= "tablet" if @portfolio_entry.tablet? %></span>
+      <span><%= "web" if @portfolio_entry.web? %></span>
+    </div>
+    <h3><%= link_to "#{@portfolio_entry.link}", @portfolio_entry.link %></h3>
+    <ul id='portfolio_images'>
+      <% @portfolio_entry.images.each_with_index do |image, index| %>
+        <li class="<%= cycle('odd', 'even') %> <%= (index == params[:image_id].to_i) ? 'selected' : 'other' %>">
+          <%= link_to_portfolio_image(@master_entry, @portfolio_entry, image, index) %>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <div class='portfolio'>
+    <%= render :partial => "/shared/content_page" %>
   </div>
-<% end %>
 
-<% content_for :body_content_right do %>
-  <h2><%= @portfolio_entry.title %></h2>
-  <h3><%= @portfolio_entry.name %></h3>
-  <h3><%= @portfolio_entry.description %></h3>
-  <div align='right' class="project_types">
-    <span><%= "mobile" if @portfolio_entry.mobile? %></span>
-    <span><%= "tablet" if @portfolio_entry.tablet? %></span>
-    <span><%= "web" if @portfolio_entry.web? %></span>
-  </div>
-  <h3><%= link_to "#{@portfolio_entry.link}", @portfolio_entry.link %></h3>
-  <ul id='portfolio_images'>
-    <% @portfolio_entry.images.each_with_index do |image, index| %>
-      <li class="<%= cycle('odd', 'even') %> <%= (index == params[:image_id].to_i) ? 'selected' : 'other' %>">
-        <%= link_to_portfolio_image(@master_entry, @portfolio_entry, image, index) %>
-      </li>
-    <% end %>
-  </ul>
+<% if @portfolio_entry.no_index %>
+  </noindex> 
 <% end %>
-
-<div class='portfolio'>
-  <%= render :partial => "/shared/content_page" %>
-</div>
 
 <% if Refinery.version < '0.9.9' %>
 <% content_for :head do %>

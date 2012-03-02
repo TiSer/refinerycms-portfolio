@@ -26,6 +26,7 @@ nl:
         mobile: Mobile
         tablet: Tablet
         web: Web
+        no_index: No index tag
         add: Toevoegen
         add_another_image: "Voeg afbeelding toe"
         content: Inhoud

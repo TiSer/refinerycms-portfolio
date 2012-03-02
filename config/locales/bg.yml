@@ -26,6 +26,7 @@ bg:
         mobile: Mobile
         tablet: Tablet
         web: Web
+        no_index: No index tag
         add: Добавяне
         add_another_image: "Добавяне на друго изображение"
         content: Съдържание

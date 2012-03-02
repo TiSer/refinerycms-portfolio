@@ -25,6 +25,7 @@ pt-BR:
         mobile: Mobile
         tablet: Tablet
         web: Web
+        no_index: No index tag
         add: Adicionar
         add_another_image: "Adicionar outra Imagem"
         content: Conteúdo
