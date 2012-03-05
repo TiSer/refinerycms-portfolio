@@ -27,7 +27,7 @@ ru:
         mobile: Мобильное
         tablet: Планшетное
         web: Веб
-        no_index: No index тэг
+        no_index: Запретить индексацию
         add: Добавить
         add_another_image: "Добавить"
         content: Содержимое

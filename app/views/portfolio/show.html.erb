@@ -1,4 +1,4 @@
-<% if @portfolio_entry.no_index %>
+<% if @portfolio_entry.no_index? %>
   <noindex> 
 <% end %>
   <% content_for :title, @portfolio_entry.title %>
@@ -29,7 +29,9 @@
       <span><%= "web" if @portfolio_entry.web? %></span>
     </div>
 
-    <% if @portfolio_entry.link_url? %>
+    <% if @portfolio_entry.link_url? && @portfolio_entry.no_index? %>
+      <h3><%= link_to @portfolio_entry.link_url, @portfolio_entry.link_url, :rel => 'nofollow' %></h3>
+    <% elsif @portfolio_entry.link_url? && !@portfolio_entry.no_index? %>
       <h3><%= link_to @portfolio_entry.link_url, @portfolio_entry.link_url %></h3>
     <% elsif @portfolio_entry.link_title? %>
       <h3><%= @portfolio_entry.link_title %></h3>
@@ -48,7 +50,7 @@
     <%= render :partial => "/shared/content_page" %>
   </div>
 
-<% if @portfolio_entry.no_index %>
+<% if @portfolio_entry.no_index? %>
   </noindex> 
 <% end %>
 

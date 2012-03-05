@@ -27,7 +27,7 @@ nb:
         mobile: Mobile
         tablet: Tablet
         web: Web
-        no_index: No index tag
+        no_index: Forbid indexing
         add: Legg til
         add_another_image: "Legg til et bilde"
         content: Innhold

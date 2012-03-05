@@ -27,7 +27,7 @@ bg:
         mobile: Mobile
         tablet: Tablet
         web: Web
-        no_index: No index tag
+        no_index: Forbid indexing
         add: Добавяне
         add_another_image: "Добавяне на друго изображение"
         content: Съдържание

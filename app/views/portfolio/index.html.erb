@@ -4,7 +4,7 @@
 
 <% content_for :body_content_left do -%>
   <% @portfolio_entries.each do | portfolio | -%>
-      <% if portfolio.no_index %>
+      <% if portfolio.no_index? %>
         <noindex> 
       <% end %>
       <p>
@@ -16,7 +16,7 @@
       <p class="content"><%= raw portfolio.link_title %></p>
       <p class="content"><%= raw portfolio.link_url %></p>
       <p class="content"><%= raw portfolio.body %></p>
-      <% if portfolio.no_index %>
+      <% if portfolio.no_index? %>
         </noindex>
       <% end %>
   <% end -%>

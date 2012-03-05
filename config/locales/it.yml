@@ -27,7 +27,7 @@ it:
         mobile: Mobile
         tablet: Tablet
         web: Web
-        no_index: No index tag
+        no_index: Forbid indexing
         add: Aggiungi
         add_another_image: "Aggiungi un'altra Immagine"
         content: Contenuto
