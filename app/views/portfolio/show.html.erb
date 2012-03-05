@@ -1,5 +1,7 @@
 <% if @portfolio_entry.no_index? %>
-  <noindex> 
+  <% content_for :meta do %>
+    <meta name="robots" content="nofollow">
+  <% end %>
 <% end %>
   <% content_for :title, @portfolio_entry.title %>
 
@@ -29,9 +31,7 @@
       <span><%= "web" if @portfolio_entry.web? %></span>
     </div>
 
-    <% if @portfolio_entry.link_url? && @portfolio_entry.no_index? %>
-      <h3><%= link_to @portfolio_entry.link_url, @portfolio_entry.link_url, :rel => 'nofollow' %></h3>
-    <% elsif @portfolio_entry.link_url? && !@portfolio_entry.no_index? %>
+    <% if @portfolio_entry.link_url? %>
       <h3><%= link_to @portfolio_entry.link_url, @portfolio_entry.link_url %></h3>
     <% elsif @portfolio_entry.link_title? %>
       <h3><%= @portfolio_entry.link_title %></h3>
@@ -49,10 +49,6 @@
   <div class='portfolio'>
     <%= render :partial => "/shared/content_page" %>
   </div>
-
-<% if @portfolio_entry.no_index? %>
-  </noindex> 
-<% end %>
 
 <% if Refinery.version < '0.9.9' %>
 <% content_for :head do %>

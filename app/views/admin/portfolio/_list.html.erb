@@ -19,7 +19,7 @@
                  :confirm => t('shared.admin.delete.message', :title => list.title),
                  :method => :delete %>
     </span>
-    <%=h list.title %>
+    <%=h list.name %>
     <% if defined?(::Refinery::I18n) and ::Refinery::I18n.frontend_locales.many? and
           (locales = list.translations.collect{|t| t.locale}).present? %>
       <span class='preview'>
